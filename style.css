@@ -52,6 +52,13 @@ html, body {margin:0;background-color:#f0f0f0;}
 	text-align:center;
 }
 
+.subTitle{
+	font-size:15px;
+	font-family: 'OpenSansRegular';
+	color:#333;
+	text-align:center;
+}
+
 .controlBox{
 	left:50%;
  	margin-left:150px;
