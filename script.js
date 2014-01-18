@@ -1,4 +1,14 @@
 function saveThisLink(){
+
+if(isEmpty(document.getElementById('linkBox').value)){
+	$.pnotify({
+    title: 'Link Cloner',
+    text: 'No Link found to clone.',
+    type: 'info'
+});
+	return;
+}
+
 $('.progressContainer').show();
 var urlToDownload= document.getElementById('linkBox').value;
 var filenameToDownload=urlToDownload.split('/');
@@ -38,4 +48,8 @@ var options = {
 };
 
 	Dropbox.save(options);
+}
+
+function isEmpty(str) {
+    return (!str || 0 === str.length);
 }
