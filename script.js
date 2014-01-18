@@ -1,11 +1,7 @@
 function saveThisLink(){
 
 if(isEmpty(document.getElementById('linkBox').value)){
-	$.pnotify({
-            title: 'Link Cloner',
-            text: 'No Link found to clone.',
-            type: 'info'
-        });
+	var n = noty({text: 'No Link Found To Clone!'});
 	return;
 }
 
@@ -42,11 +38,7 @@ var options = {
     // hosting the files, such as not being able to find a file. This callback is
     // also called if there is an error on Dropbox or if the user is over quota.
     error: function (errorMessage) {
-        $.pnotify({
-            title: 'Link Cloner',
-            text: errorMessage,
-            type: 'error'
-        });
+        var n = noty({text: errorMessage, type:'error'});
     	//alert(errorMessage);
     	$('.progressContainer').hide();
     }
