@@ -1,4 +1,10 @@
+@errorBackground: #f2dede;
+@errorBorder: darken(spin(@errorBackground, -10), 3%);
+@errorText: #b94a48;
 
+@infoBackground: #d9edf7;
+@infoBorder: darken(spin(@infoBackground, -10), 7%);
+@infoText: #3a87ad;
 
 @font-face {
     font-family: 'OpenSansBold'; /*a name to be used later*/
