@@ -6,6 +6,7 @@
 <script type="text/javascript" src="https://www.dropbox.com/static/api/1/dropins.js" id="dropboxjs" data-app-key="lkngj1iey3tu9b2"></script>
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="jquery.knob.js"></script>
+<script type="text/javascript" src="pines/jquery.pnotify.min"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 <script src="script.js"></script>
 <script>
@@ -23,6 +24,12 @@ $(function() {
     );
     
     $('.progressContainer').hide();
+
+    $("#linkBox").keyup(function(event){
+    	if(event.keyCode == 13){
+        	$("#goBtn").click();
+    	}
+	});
 });
 </script>
 </head>
