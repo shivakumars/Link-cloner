@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'OpenSansBold'; /*a name to be used later*/
+    src: url('OpenSans-Bold.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'OpenSansRegular'; /*a name to be used later*/
+    src: url('OpenSans-Regular.ttf'); /*URL to font*/
+}
+
+html, body {margin:0;background-color:#f0f0f0;}
+
+#centeredDiv { 
+	position:absolute;
+	margin-top:-200px;
+	margin-left:-400px;
+	top:50%;
+	left:50%;
+	width:800px;
+	height:400px;
+}
+
+.progress{
+	position:absolute;
+	left:50%;
+	top:50%;
+ 	margin-left:-200px;
+ 	margin-top:-200px;
+ 	height:400px;
+ 	width:400px;
+}
+
+.overlay{
+	opacity:0.5;
+	background-color:#222;
+	width:100%;
+	height:100%;
+}
+
+.title{
+	font-size:100px;
+	font-family: 'OpenSansBold';
+	color:#333;
+	text-align:center;
+}
+
+.controlBox{
+	left:50%;
+ 	margin-left:150px;
+}
+
+ .textbox { 
+    border: 1px solid #c4c4c4; 
+    height: 40px; 
+    width: 500px; 
+    font-size: 13px; 
+    padding: 4px 4px 4px 4px; 
+    border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px; 
+    box-shadow: 0px 0px 8px #d9d9d9; 
+    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9; 
+} 
+ 
+.textbox:focus { 
+    outline: none; 
+    border: 1px solid #7bc1f7; 
+    box-shadow: 0px 0px 8px #7bc1f7; 
+    -moz-box-shadow: 0px 0px 8px #7bc1f7; 
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7; 
+} 
+
+#goBtn {
+	background-color:transparent;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:50px;
+	text-decoration:none;
+	text-align:center;
+}
+
+#goBtn:active {
+	position:relative;
+	top:1px;
+}
+
+

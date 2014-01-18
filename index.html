@@ -1,0 +1,76 @@
+
+
+<html>
+<head>
+<title>Link Cloner</title>
+<script type="text/javascript" src="https://www.dropbox.com/static/api/1/dropins.js" id="dropboxjs" data-app-key="lkngj1iey3tu9b2"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.knob.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+<script>
+$(function() {
+	
+    $(".dial").knob();
+    $('.dial')
+    .trigger(
+        'configure',
+        {
+        	"bgColor":"#CCC",
+        	"width":400,
+        	"height":400
+        }
+    );
+    
+    $('.progressContainer').hide();
+});
+</script>
+</head>
+<body>
+
+<div id="centeredDiv">
+	<div class="title">Link Cloner</div>
+	<br><br> 
+	<div class="controlBox">
+		<input class="textbox" id="linkBox" type="text">
+		<a href="#" id="goBtn"  onclick="saveThisLink();">Go</a>
+	</div>
+</div>
+
+
+<div class="progressContainer">
+	<div class="overlay"></div>
+	<div class="progress">
+		<input type="text" value="0" class="dial" readonly >
+	</div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!--
+<script type="text/javascript" src="https://www.dropbox.com/static/api/1/dropins.js" id="dropboxjs" data-app-key="cvib6vek204h7wq"></script>
+
+<div id="link" style="visibility: hidden">
+<a href="#" class="dropbox-saver" id="abc"></a>
+</div>
+
+
+Link: <input type="text" id="textbox_id" onfocus="onFOcus()"><br>
+<button id="b1" onclick="onCLick()">Download</button>
+<script>
+function onFOcus(){
+	document.getElementById("link").style.visibility="hidden";
+}
+function onCLick(){
+	document.getElementById("link").style.visibility="visible";
+	document.getElementById("abc").href=document.getElementById('textbox_id').value;
+}
+</script>-->
