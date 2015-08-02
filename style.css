@@ -64,6 +64,12 @@ html, body {margin:0;background-color:#f0f0f0;}
  	margin-left:150px;
 }
 
+.sharebar{
+	left:50%;
+	width:20%;
+ 	margin-left:40%;
+}
+
  .textbox { 
     border: 1px solid #c4c4c4; 
     height: 40px; 
